@@ -13,7 +13,7 @@ const aponTech= [ 'javaScript', 'typeScript', 'reactjs', 'nodejs', 'mongodb', 'm
 console.log(aponTech)
 
 
-const nz = 2000;
+const nz = 2000; 
 const az = 5000;
 const zan = az + nz
 console.log(zan)
@@ -27,3 +27,9 @@ const user = {
   
   console.log(user.firstName)
   // Property 'name' does not exist on type '{ firstName: string; lastName: string; role: string; }'.
+
+
+const h = 2;
+const i = 1;
+const all = h + i  
+console.log(all)  
