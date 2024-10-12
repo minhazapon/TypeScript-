@@ -18,3 +18,12 @@ const az = 5000;
 const zan = az + nz
 console.log(zan)
 
+
+const user = {
+    firstName: "Angela",
+    lastName: "Davis",
+    role: "Professor",
+  }
+  
+  console.log(user.firstName)
+  // Property 'name' does not exist on type '{ firstName: string; lastName: string; role: string; }'.
