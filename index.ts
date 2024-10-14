@@ -77,6 +77,11 @@ const bolz : boolean = true
 
 console.log(count, nos, bolz)
 
+let frontEnd: string = 'javaScript, reactjs'
+
+let backEnd: string = 'nodeJs, express.js'
+
+console.log(frontEnd, backEnd)
 
 //////array of union type////////
 
@@ -96,25 +101,12 @@ oj = {
 
  namez: 'minhaz',
  address: 'jheniadah',
- wifeName: 'farzana moutushi ponny',
  number: 1950374409,
  forenTour: false,
  religion: 'islam' 
 
 
 }
-
-// console.log(oj.namez)
-// console.log(oj.address)
-// console.log(oj.wifeName)
-// console.log(oj.number)
-// console.log(oj.forenTour)
-// console.log(oj.religion)
-
-
-//////////////  Explicit & Union Types ///////////////////////
-
-
 
 /////////Dynamic Type//////////////////
 
@@ -134,6 +126,75 @@ pata2 = true
 console.log(pata, pata1, pata2)
 
 
-
-
 /////////Dynamic Type//////////////////
+
+
+
+///////function of typeScript///////////////////
+
+
+const Func = ( a: number, b:number, c: number, d:number ) =>{
+
+    
+    const allFunc = a * b * c * d 
+
+    const all = allFunc + 90 
+
+    console.log(all)
+
+    if(all > 10){
+
+       console.log('code is true')
+
+
+    } else {
+
+
+       console.log('code is not true')
+
+    }
+
+}
+
+Func(20, 50, 60, 70)
+
+
+////////////////////////////Type Aliases///////////////////////////
+
+type AllValueZ = string | number;
+
+
+const bangladesh: AllValueZ = 50;
+
+const india: AllValueZ = 'india is a divine city'
+
+const aponAge: AllValueZ = 23;
+
+console.log(bangladesh, india, aponAge)
+
+
+const FuncZ = ( mangoPrice:AllValueZ, mangoReview:AllValueZ ) =>{
+
+     console.log(mangoPrice, mangoReview)
+
+}
+
+FuncZ(500, 'veryGood')
+
+
+///////////////////// Function Signatures /////////////////////////
+
+let Add: ( m: number, n: number ) => number;
+
+Add = ( m: number, n: number ) =>{
+
+   const all = m + n 
+
+   return all
+ 
+}
+
+const numZ = Add(20, 40);
+console.log(numZ)
+
+

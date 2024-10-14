@@ -39,6 +39,9 @@ const count = 'bangladesh';
 const nos = 1950374409;
 const bolz = true;
 console.log(count, nos, bolz);
+let frontEnd = 'javaScript, reactjs';
+let backEnd = 'nodeJs, express.js';
+console.log(frontEnd, backEnd);
 //////array of union type////////
 let w = ['apon', 'mernStack', 'fullStack', 50, 'javaScript', 8989,];
 console.log(w);
@@ -47,18 +50,10 @@ let oj;
 oj = {
     namez: 'minhaz',
     address: 'jheniadah',
-    wifeName: 'farzana moutushi ponny',
     number: 1950374409,
     forenTour: false,
     religion: 'islam'
 };
-// console.log(oj.namez)
-// console.log(oj.address)
-// console.log(oj.wifeName)
-// console.log(oj.number)
-// console.log(oj.forenTour)
-// console.log(oj.religion)
-//////////////  Explicit & Union Types ///////////////////////
 /////////Dynamic Type//////////////////
 //////// any type of typeScript////////
 let pata;
@@ -69,3 +64,32 @@ pata = 'gach',
     pata2 = true;
 console.log(pata, pata1, pata2);
 /////////Dynamic Type//////////////////
+///////function of typeScript///////////////////
+const Func = (a, b, c, d) => {
+    const allFunc = a * b * c * d;
+    const all = allFunc + 90;
+    console.log(all);
+    if (all > 10) {
+        console.log('code is true');
+    }
+    else {
+        console.log('code is not true');
+    }
+};
+Func(20, 50, 60, 70);
+const bangladesh = 50;
+const india = 'india is a divine city';
+const aponAge = 23;
+console.log(bangladesh, india, aponAge);
+const FuncZ = (mangoPrice, mangoReview) => {
+    console.log(mangoPrice, mangoReview);
+};
+FuncZ(500, 'veryGood');
+///////////////////// Function Signatures /////////////////////////
+let Add;
+Add = (m, n) => {
+    const all = m + n;
+    return all;
+};
+const numZ = Add(20, 40);
+console.log(numZ);
