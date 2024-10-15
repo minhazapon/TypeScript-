@@ -1,40 +1,5 @@
 
 
-const country = 'khilfat jheniadah inshallah'
-console.log(country) 
-
-const n = 2;
-const a = 2;
-console.log(n + a);
-
-
-const aponTech= [ 'javaScript', 'typeScript', 'reactjs', 'nodejs', 'mongodb', 'mongoose' ]
-
-console.log(aponTech)
-
-
-const nz = 2000; 
-const az = 5000;
-const zan = az + nz
-console.log(zan)
-
-
-const user = {
-    firstName: "Angela",
-    lastName: "Davis",
-    role: "Professor",
-  }
-  
-  console.log(user.firstName)
-  // Property 'name' does not exist on type '{ firstName: string; lastName: string; role: string; }'.
-
-
-const h = 2;
-const i = 1;
-const all = h + i  
-console.log(all)  
-
-
 /////basic typescript //////
 
 
@@ -196,5 +161,72 @@ Add = ( m: number, n: number ) =>{
 
 const numZ = Add(20, 40);
 console.log(numZ)
+
+
+////////////  interface of typeScript  //////////////////
+
+
+interface inValueZ  { 
+    apple: number,
+    mango: number
+} 
+let allFrutZ = {
+     apple: 34,
+     mango: 50
+}
+console.log(allFrutZ.apple)
+console.log(allFrutZ.mango)
+
+
+
+/////////////////Generics - TypeScript //////////////////////
+
+interface GTypes<T> {
+    apon: string,
+    address: string,
+    data: T
+}
+const Gall: GTypes<object> = {
+    apon: 'fullName: minhazul abedin apon',
+    address: 'jhenaidah',
+    data: {        
+      name: 'apon',
+      profession: 'software engineer'
+    }
+}
+console.log(Gall.apon)
+console.log(Gall.address)
+console.log(Gall.data)
+
+
+
+//////////////Enum Types of typeScript///////////////////////////
+
+
+enum Rtype { SUCCESS, failure, number,  forbid }
+
+
+interface OO {
+   name: string,
+   nuZ: number
+}
+ 
+const allO = {
+  
+   name: 'apon'
+   // nuZ: Rtype.SUCCESS
+
+
+}
+
+
+///////////////////tuples of typeScript/////////////////
+
+
+let arr: [number, string, object] = [ 1000, 'minhazTheFullStack', { w: 20 } ]
+
+
+console.log(arr)
+
 
 
