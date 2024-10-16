@@ -48,12 +48,28 @@ let backEnd: string = 'nodeJs, express.js'
 
 console.log(frontEnd, backEnd)
 
+
+const tea: string = 'chayer dam 500';
+
+const coffe: number = 500;
+
+const sylethIsTeaCountry: boolean = true
+
+
+console.log(tea, coffe, sylethIsTeaCountry)
+
+
 //////array of union type////////
 
 
 let w : (string | number)[] = [ 'apon', 'mernStack', 'fullStack', 50, 'javaScript', 8989,  ]
 
 console.log(w)
+
+
+let aponSkills: (string | number)[] = ['javaScript', 'typeScript', 'react.js', 'next.js', 'node.js', 'express.js', 'mongodb', 'mongoose']
+
+console.log(aponSkills)
 
 
 
@@ -73,6 +89,21 @@ oj = {
 
 }
 
+
+let ojs : object 
+
+
+ojs = {
+
+   name: 'minhaz',
+   skills: 'softwareEngineering',
+   address: 'jheniadah',
+   number: 1950374409
+
+
+}
+
+
 /////////Dynamic Type//////////////////
 
 
@@ -89,6 +120,17 @@ pata1 = 20,
 pata2 = true 
 
 console.log(pata, pata1, pata2)
+
+
+let tree1: any;
+let tree2: any;
+let tree3: any;
+
+tree1 = 'bangladesh',
+tree2 = 989898,
+tree3 = true
+
+console.log(tree1, tree2, tree3)
 
 
 /////////Dynamic Type//////////////////
@@ -124,6 +166,18 @@ const Func = ( a: number, b:number, c: number, d:number ) =>{
 Func(20, 50, 60, 70)
 
 
+let fuZ = (d: number, f: number) =>{
+
+    const allQ = d + f 
+
+    console.log(allQ)
+
+}
+
+fuZ(20, 50)
+
+
+
 ////////////////////////////Type Aliases///////////////////////////
 
 type AllValueZ = string | number;
@@ -147,6 +201,17 @@ const FuncZ = ( mangoPrice:AllValueZ, mangoReview:AllValueZ ) =>{
 FuncZ(500, 'veryGood')
 
 
+type valueZ = string | number 
+
+const FNC = (vv: valueZ, bb: valueZ) =>{
+
+    console.log(vv, bb)
+
+}
+
+FNC(80, 90)
+
+
 ///////////////////// Function Signatures /////////////////////////
 
 let Add: ( m: number, n: number ) => number;
@@ -163,6 +228,21 @@ const numZ = Add(20, 40);
 console.log(numZ)
 
 
+let Fs: ( z: number, x: number ) => number;
+
+Fs = (  z: number, x: number ) =>{
+
+     const allX = z + x
+
+     return allX
+
+}
+
+const xx = Fs(1000, 4000 )
+
+console.log(xx)
+
+
 ////////////  interface of typeScript  //////////////////
 
 
@@ -176,6 +256,25 @@ let allFrutZ = {
 }
 console.log(allFrutZ.apple)
 console.log(allFrutZ.mango)
+
+
+interface FaceValueZ {
+
+    shemanto: string,
+    apon: string
+
+}
+
+const allFaces = {
+    
+    shemanto: 'they are frnz',
+    apon: 'they are frndZ'
+
+}
+
+
+console.log(allFaces.shemanto)
+console.log(allFaces.apon)
 
 
 
@@ -198,6 +297,30 @@ console.log(Gall.apon)
 console.log(Gall.address)
 console.log(Gall.data)
 
+
+interface GeTypes<T> {
+
+   mac: number,
+   windows: number,
+   linux: T
+
+}
+
+const GeR: GeTypes<object> = {
+
+   mac: 1500000,
+   windows: 2000,
+   linux:{
+
+      manzero: 'good',
+      kalin: 'good',
+      fedro: 'very Good'
+
+   }
+
+}
+
+// console.log(GeR.linux.manzero)
 
 
 //////////////Enum Types of typeScript///////////////////////////
@@ -225,8 +348,13 @@ const allO = {
 
 let arr: [number, string, object] = [ 1000, 'minhazTheFullStack', { w: 20 } ]
 
-
 console.log(arr)
+
+
+let arr1: [number, string, object] = [ 20000, 'aponTheSoftware Engineer', { K: 10000 } ]
+
+
+console.log(arr1)
 
 
 
