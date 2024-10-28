@@ -16,6 +16,32 @@ function Numz(a : number, b : number){
 Numz(10, 20)
 
 
+
+function Numzz( a: number, b:number ){
+
+    const all = a + b
+
+    const allN = 20 * all 
+
+    console.log('alls result is >', allN)
+
+    if(allN > 50){
+
+       console.log('all Is good')
+
+    } else {
+
+       console.log('all is not good')
+
+    }
+
+}
+
+Numzz( 500, 700 )
+
+
+
+
 let aponAddress = {
 
     name: 'minhazul abedin apon',
@@ -26,6 +52,9 @@ let aponAddress = {
 }
 
 console.log(aponAddress.location)
+
+
+
 
 
 
@@ -59,6 +88,15 @@ const sylethIsTeaCountry: boolean = true
 console.log(tea, coffe, sylethIsTeaCountry)
 
 
+const typeScript: string = 'this is better than js'
+
+const js: number = 5000;
+
+const all: boolean = true 
+
+console.log(typeScript, js, all)
+
+
 //////array of union type////////
 
 
@@ -70,6 +108,11 @@ console.log(w)
 let aponSkills: (string | number)[] = ['javaScript', 'typeScript', 'react.js', 'next.js', 'node.js', 'express.js', 'mongodb', 'mongoose']
 
 console.log(aponSkills)
+
+
+let aponFavFoodz : ( string | number)[] = [ 'kabab and luchi', 'biriyani', 'khechuri tiger murgi', 'razhash meat', 'etc' ]
+
+console.log(aponFavFoodz)
 
 
 
@@ -100,8 +143,22 @@ ojs = {
    address: 'jheniadah',
    number: 1950374409
 
+}
+
+
+let company: object 
+
+let object = {
+
+   name: 'toptal',
+   name1: 'zelf',
+   name2: 'kodezen'
 
 }
+
+console.log(object.name1)
+console.log(object.name2)
+console.log(object.name)
 
 
 /////////Dynamic Type//////////////////
@@ -131,6 +188,16 @@ tree2 = 989898,
 tree3 = true
 
 console.log(tree1, tree2, tree3)
+
+
+let com: any 
+let FoodPrice: any
+
+ com = 'toptal',
+ FoodPrice = 5000;
+
+console.log(com)
+console.log(FoodPrice)
 
 
 /////////Dynamic Type//////////////////
@@ -175,6 +242,20 @@ let fuZ = (d: number, f: number) =>{
 }
 
 fuZ(20, 50)
+
+
+
+let Fnz = (f: number, l: number, v: number ) => {
+
+    const allValue = f * l / v
+
+    return allValue
+
+}
+
+const Re = Fnz( 30, 40, 50 )
+
+console.log('this re func ...> ', Re)
 
 
 
@@ -342,7 +423,7 @@ const allO = {
 
 }
 
-
+ 
 ///////////////////tuples of typeScript/////////////////
 
 
